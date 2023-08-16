@@ -192,11 +192,11 @@
 											<span class="featured" th:if="${rcCountMap[corp.id]>0}" style="background-color:mistyrose; color: red">채용중</span> 
 											<th:block th:if = "${corp.corpStoredFileName != null}">
 										        <span class="company-logo">
-											        <img th:src="${corp.corpStoredFileName}" alt="" style="width:80px; height:80px"/>
+											        <img src="images/resource/company-logo/office-building (1) (1).png" alt="images/resource/company-logo/office-building (1) (1).png" style="width:80px; height:80px"/>
 										        </span>
 										    </th:block>
 										    <th:block th:if = "${corp.corpStoredFileName == null}">
-										        <figure class="company-logo"><<img th:src="@{'images/logo_san/' + ${corp.id} + '_logo.png'}" alt=""/></figure>
+										        <figure class="company-logo"><img src="images/resource/company-logo/6-1.png" alt="images/resource/company-logo/office-building (1) (1).png"/></figure>
 										    </th:block>
 											<h4>
 												<a th:href="@{/corp-detail(corpId=${corp.id})}"
