@@ -196,7 +196,7 @@
 										        </span>
 										    </th:block>
 										    <th:block th:if = "${corp.corpStoredFileName == null}">
-										        <figure class="company-logo"><img src="images/resource/company-logo/6-1.png" alt=""/></figure>
+										        <figure class="company-logo"><<img th:src="@{'images/logo_san/' + ${corp.id} + '_logo.png'}" alt=""/></figure>
 										    </th:block>
 											<h4>
 												<a th:href="@{/corp-detail(corpId=${corp.id})}"
